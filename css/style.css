@@ -1,0 +1,301 @@
+
+  /* body {
+    background: linear-gradient(135deg, #1e1b4b, #3b82f6);
+    color: white;
+    padding: 2rem;
+    font-family: sans-serif;
+  } */
+  body {
+    /* background: linear-gradient(to bottom, #1e1b4b, #3b82f6); */
+    /* min-height: 100vh; */
+    padding: 2rem;
+    padding-top: 1rem;
+    color: white;
+    font-family: Verdana, sans-serif;
+    background-image: url('../images/background4.jpg'); /* Path to your background image */
+  background-size: cover;        
+  background-position: center;   
+  background-repeat: no-repeat;  
+  }
+  body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  body.fade-in {
+    opacity: 1;
+  }
+  
+  body.fade-out {
+    opacity: 0;
+  }
+  
+  .site-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .site-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* .site-subtitle {
+    color: #555;
+  }
+   */
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .music-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+  
+  .music-button {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .music-button:hover {
+    transform: scale(1.05);
+  }
+
+.music-button{
+    background: rgba(255, 255, 255, 0.1); /* frosted glass effect */
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.music-image {
+    width: 100%;
+    max-width: 250px;      /* limits how wide it can go */
+    height: auto;          /* preserves aspect ratio */
+    border-radius: 0.5rem; /* optional: soft corners */
+    object-fit: cover;     /* safe fallback */
+  }
+  
+  .navbar {
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    /* margin: 0; */
+  }
+  
+  /* .nav-links a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover {
+    color: #fcd34d; 
+  } */
+
+  .nav-links a {
+    color: #f9fafb;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s, border-bottom 0.2s, color 0.2s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 2px solid white;
+  }
+  
+
+  .nav-links a.active {
+    border-bottom: 2px solid white;
+  }
+  
+.artist-card {
+  background: rgba(255, 255, 255, 0.1); /* frosted glass effect */
+  border-radius: 20px;
+  padding: 1.5rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.artist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* deeper shadow */
+    /* background: rgba(255, 255, 255, 0.15); */
+  }
+
+.artist-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid black;
+}
+
+.artist-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.artist-desc {
+  max-width: 500px;
+  line-height: 1.5;
+}
+.header-content {
+display: flex;
+justify-content: space-between;
+ }
+ .page-title {
+  font-size: 1.5rem;
+  /* margin-bottom: 1rem; */
+  text-align: center;
+  font-weight: bold;
+}
+/* Hide class */
+/* .hidden {
+    display: none;
+  }
+  
+  .artist-link:not(.hidden) {
+    font-weight: bold;
+    color: #1db954;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    display: block;
+  } */
+  .hidden {
+    display: none;
+  }
+  
+  .spotify {
+    margin-top: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  .spotify:hover {
+    /* outline: 2px solid white;  */
+    /* box-shadow: 0 0 0 4px rgba(29, 185, 84, 0.5); */
+    transform: scale(1.05);
+  }
+  .card-instruction {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.8rem;
+    margin: 1.5rem 0;
+    font-weight: bold;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 1rem;
+    font-weight: bolder;
+    background-color: #111827;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    z-index: 1001;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: top 0.3s ease;
+  }
+  
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  .artist-card:focus {
+    /* outline: 2px solid white;  */
+    /* box-shadow: 0 0 0 4px rgba(29, 185, 84, 0.5); */
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  }
+  .artist-grid{
+    padding-bottom: 0.3em;
+}
+  @media (max-width: 768px) {
+    body{
+        padding-top: 0em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        padding-bottom: 0.5em;
+
+    }
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0rem;
+        padding: 1rem;
+      }
+      .navbar{
+        padding: 0em;
+        margin: 0em;
+      }
+      .music-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin-bottom: 0px;
+      }
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5em;
+      }
+      .site-title {
+        margin-top: 0em;
+        font-size: 2em;
+      }
+      .page-title {
+        margin: 0;
+        padding: 0;
+        line-height: 0.5;
+      }
+    .artist-card{
+        flex-direction: column;
+        text-align: center;
+        gap:0em;
+    }
+    .artist-grid{
+        padding-bottom: 0em;
+    }
+  }
+  
