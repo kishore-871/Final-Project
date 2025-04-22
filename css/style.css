@@ -21,15 +21,15 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
-  
+
   body.fade-in {
     opacity: 1;
   }
-  
+
   body.fade-out {
     opacity: 0;
   }
-  
+
   .site-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -187,6 +187,9 @@ justify-content: space-between;
   /* margin-bottom: 1rem; */
   text-align: center;
   font-weight: bold;
+  text-transform: uppercase;
+        font-style: oblique;
+  /* text-transform: uppercase; */
 }
 /* Hide class */
 /* .hidden {
@@ -249,6 +252,14 @@ justify-content: space-between;
   .artist-grid{
     padding-bottom: 0.3em;
 }
+.site-subtitle {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
   @media (max-width: 768px) {
     body{
         padding-top: 0em;
@@ -258,7 +269,7 @@ justify-content: space-between;
 
     }
     .header-content {
-        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
         text-align: center;
         gap: 0rem;
@@ -278,7 +289,7 @@ justify-content: space-between;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1.5em;
+        gap: 1.2em;
       }
       .site-title {
         margin-top: 0em;
@@ -287,7 +298,8 @@ justify-content: space-between;
       .page-title {
         margin: 0;
         padding: 0;
-        line-height: 0.5;
+        font-size:1.5em;
+        
       }
     .artist-card{
         flex-direction: column;
@@ -297,5 +309,9 @@ justify-content: space-between;
     .artist-grid{
         padding-bottom: 0em;
     }
+    .nav-links a {
+        font-size: 0.8em;
+    }
+  
   }
   

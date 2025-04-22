@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
     const body = document.querySelector("body");
     body.classList.add("fade-in");
-  
+
     const links = document.querySelectorAll("a[href]");
     links.forEach(link => {
       link.addEventListener("click", function (e) {
@@ -11,11 +11,11 @@ window.addEventListener("load", function () {
           link.href.includes("#") ||
           link.hostname !== window.location.hostname
         ) return;
-  
+
         e.preventDefault();
         body.classList.remove("fade-in");
         body.classList.add("fade-out");
-  
+
         setTimeout(() => {
           window.location.href = link.href;
         }, 300);
@@ -24,31 +24,6 @@ window.addEventListener("load", function () {
   });
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const toggleCards = document.querySelectorAll(".toggle-card");
-  
-//     toggleCards.forEach(card => {
-//       // Click with mouse
-//       card.addEventListener("click", toggleCard);
-  
-//       // Keyboard access: Enter or Space
-//       card.addEventListener("keydown", (e) => {
-//         if (e.key === "Enter" || e.key === " ") {
-//           e.preventDefault();
-//           toggleCard.call(card);
-//         }
-//       });
-  
-//       function toggleCard() {
-//         const desc = card.querySelector(".artist-desc");
-//         const player = card.querySelector(".spotify") || card.querySelector(".youtube-video");
-//         if (desc && player) {
-//           desc.classList.toggle("hidden");
-//           player.classList.toggle("hidden");
-//         }
-//       }
-//     });
-//   });
 document.addEventListener("DOMContentLoaded", function () {
     const toggleCards = document.querySelectorAll(".toggle-card");
   
