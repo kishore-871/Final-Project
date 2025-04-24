@@ -12,7 +12,7 @@
     padding-top: 1rem;
     color: white;
     font-family: Verdana, sans-serif;
-    background-image: url('../images/background4.jpg'); /* Path to your background image */
+    background-image: url('../images/background4.jpg'); 
   background-size: cover;        
   background-position: center;   
   background-repeat: no-repeat;  
@@ -90,10 +90,10 @@
 
 .music-image {
     width: 100%;
-    max-width: 250px;      /* limits how wide it can go */
-    height: auto;          /* preserves aspect ratio */
-    border-radius: 0.5rem; /* optional: soft corners */
-    object-fit: cover;     /* safe fallback */
+    max-width: 250px;      
+    height: auto;         
+    border-radius: 0.5rem; 
+    object-fit: cover;     
   }
   
   .navbar {
@@ -141,7 +141,7 @@
   }
   
 .artist-card {
-  background: rgba(255, 255, 255, 0.1); /* frosted glass effect */
+  background: rgba(255, 255, 255, 0.1); 
   border-radius: 20px;
   padding: 1.5rem;
   backdrop-filter: blur(12px);
@@ -156,7 +156,7 @@
 }
 .artist-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* deeper shadow */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); 
     /* background: rgba(255, 255, 255, 0.15); */
   }
 
